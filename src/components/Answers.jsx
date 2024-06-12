@@ -29,7 +29,7 @@ shuffledAnswers.current.sort(()=>Math.random()-0.5);
             
              return(
                 <li key={answer} className="answer">
-                <button onClick={()=>onSelect(answer)} className={cssClass}>{answer}</button>
+                <button onClick={()=>onSelect(answer)} className={cssClass} disabled={answerState !== ''}>{answer}</button>
                 </li>
                 )
         }
